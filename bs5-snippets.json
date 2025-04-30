@@ -1,0 +1,398 @@
+{
+    "html": [
+        {
+            "name": "Bootstrap 5 Docs",
+            "trigger": "bs5",
+            "body": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>$(1:Bootstrap demo)</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH\" crossorigin=\"anonymous\">\n  </head>\n  <body>\n    $(2:<h1>Hello, world!</h1>)\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>\n  </body>\n</html>"
+        },
+        {
+            "name": "Bootstrap 5 Starter Template",
+            "trigger": "bstpl",
+            "body": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>$(1:Bootstrap demo)</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH\" crossorigin=\"anonymous\">\n  </head>\n  <body>\n    $(2:<h1>Hello, world!</h1>)\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>\n  </body>\n</html>"
+        },
+        {
+            "name": "Bootstrap 5 Starter Template w/ Popper",
+            "trigger": "bstplj",
+            "body": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>$(1:Bootstrap demo)</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH\" crossorigin=\"anonymous\">\n  </head>\n  <body>\n    $(2:<h1>Hello, world!</h1>)\n    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js\" integrity=\"sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js\" integrity=\"sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy\" crossorigin=\"anonymous\"></script>\n  </body>\n</html>"
+        },
+        {
+            "name": "Bootstrap 5 Alert",
+            "trigger": "alert",
+            "body": "<div class=\"alert alert-$(1:primary)\" role=\"alert\">\n  $(2:A simple primary alert—check it out!)\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Badge",
+            "trigger": "badge",
+            "body": "<span class=\"badge bg-$(1:primary)\">$(2:New)</span>"
+        },
+        {
+            "name": "Bootstrap 5 Breadcrumb",
+            "trigger": "breadcrumb",
+            "body": "<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"$(1:#)\">$(2:Home)</a></li>\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">$(3:Library)</li>\n  </ol>\n</nav>"
+        },
+        {
+            "name": "Bootstrap 5 Breadcrumb with Separator",
+            "trigger": "breadcrumb-sep",
+            "body": "<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"$(1:#)\">$(2:Home)</a></li>\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">$(3:Library)</li>\n  </ol>\n</nav>"
+        },
+        {
+            "name": "Bootstrap 5 Button",
+            "trigger": "btn",
+            "body": "<button type=\"button\" class=\"btn btn-$(1:primary)\">$(2:Primary)</button>"
+        },
+        {
+            "name": "Bootstrap 5 Button Group",
+            "trigger": "btn-group",
+            "body": "<div class=\"btn-group\" role=\"group\" aria-label=\"$(1:Basic example)\">\n  <button type=\"button\" class=\"btn btn-$(2:primary)\">$(3:Left)</button>\n  <button type=\"button\" class=\"btn btn-$(4:primary)\">$(5:Middle)</button>\n  <button type=\"button\" class=\"btn btn-$(6:primary)\">$(7:Right)</button>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Button Toolbar",
+            "trigger": "btn-toolbar",
+            "body": "<div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"$(1:Toolbar with button groups)\">\n  <div class=\"btn-group me-2\" role=\"group\" aria-label=\"$(2:First group)\">\n    <button type=\"button\" class=\"btn btn-$(3:primary)\">$(4:1)</button>\n    <button type=\"button\" class=\"btn btn-$(5:primary)\">$(6:2)</button>\n    <button type=\"button\" class=\"btn btn-$(7:primary)\">$(8:3)</button>\n    <button type=\"button\" class=\"btn btn-$(9:primary)\">$(10:4)</button>\n  </div>\n  <div class=\"btn-group me-2\" role=\"group\" aria-label=\"$(11:Second group)\">\n    <button type=\"button\" class=\"btn btn-$(12:secondary)\">$(13:5)</button>\n    <button type=\"button\" class=\"btn btn-$(14:secondary)\">$(15:6)</button>\n    <button type=\"button\" class=\"btn btn-$(16:secondary)\">$(17:7)</button>\n  </div>\n  <div class=\"btn-group\" role=\"group\" aria-label=\"$(18:Third group)\">\n    <button type=\"button\" class=\"btn btn-$(19:info)\">$(20:8)</button>\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Card",
+            "trigger": "card",
+            "body": "<div class=\"card\" style=\"width: $(1:18)rem;\">\n  <img src=\"$(2:...)\" class=\"card-img-top\" alt=\"$(3:...)\">\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">$(4:Card title)</h5>\n    <p class=\"card-text\">$(5:Some quick example text to build on the card title and make up the bulk of the card's content.)</p>\n    <a href=\"$(6:#)\" class=\"btn btn-primary\">$(7:Go somewhere)</a>\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Card Grid",
+            "trigger": "card-grid",
+            "body": "<div class=\"row row-cols-1 row-cols-md-$(1:2) g-4\">\n  <div class=\"col\">\n    <div class=\"card\">\n      <img src=\"$(2:...)\" class=\"card-img-top\" alt=\"$(3:...)\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">$(4:Card title)</h5>\n        <p class=\"card-text\">$(5:This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.)</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"card\">\n      <img src=\"$(6:...)\" class=\"card-img-top\" alt=\"$(7:...)\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">$(8:Card title)</h5>\n        <p class=\"card-text\">$(9:This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.)</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"card\">\n      <img src=\"$(10:...)\" class=\"card-img-top\" alt=\"$(11:...)\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">$(12:Card title)</h5>\n        <p class=\"card-text\">$(13:This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.)</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"card\">\n      <img src=\"$(14:...)\" class=\"card-img-top\" alt=\"$(15:...)\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">$(16:Card title)</h5>\n        <p class=\"card-text\">$(17:This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.)</p>\n      </div>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Card horizontal",
+            "trigger": "card-horizontal",
+            "body": "<div class=\"card mb-3\" style=\"max-width: $(1:540)px;\">\n  <div class=\"row g-0\">\n    <div class=\"col-md-$(2:4)\">\n      <img src=\"$(3:...)\" class=\"img-fluid rounded-start\" alt=\"$(4:...)\">\n    </div>\n    <div class=\"col-md-$(5:8)\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">$(6:Card title)</h5>\n        <p class=\"card-text\">$(7:This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.)</p>\n        <p class=\"card-text\"><small class=\"text-body-secondary\">$(8:Last updated 3 mins ago)</small></p>\n      </div>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Carousel",
+            "trigger": "carousel",
+            "body": "<div id=\"$(1:carouselExampleIndicators)\" class=\"carousel slide\">\n  <div class=\"carousel-indicators\">\n    <button type=\"button\" data-bs-target=\"#$(1:carouselExampleIndicators)\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"$(2:Slide 1)\"></button>\n    <button type=\"button\" data-bs-target=\"#$(1:carouselExampleIndicators)\" data-bs-slide-to=\"1\" aria-label=\"$(3:Slide 2)\"></button>\n    <button type=\"button\" data-bs-target=\"#$(1:carouselExampleIndicators)\" data-bs-slide-to=\"2\" aria-label=\"$(4:Slide 3)\"></button>\n  </div>\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <img src=\"$(5:...)\" class=\"d-block w-100\" alt=\"$(6:...)\">\n    </div>\n    <div class=\"carousel-item\">\n      <img src=\"$(7:...)\" class=\"d-block w-100\" alt=\"$(8:...)\">\n    </div>\n    <div class=\"carousel-item\">\n      <img src=\"$(9:...)\" class=\"d-block w-100\" alt=\"$(10:...)\">\n    </div>\n  </div>\n  <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#$(1:carouselExampleIndicators)\" data-bs-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"visually-hidden\">$(11:Previous)</span>\n  </button>\n  <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#$(1:carouselExampleIndicators)\" data-bs-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"visually-hidden\">$(12:Next)</span>\n  </button>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Collapse",
+            "trigger": "collapse",
+            "body": "<p>\n  <a class=\"btn btn-$(1:primary)\" data-bs-toggle=\"collapse\" href=\"#$(2:collapseExample)\" role=\"button\" aria-expanded=\"false\" aria-controls=\"$(2:collapseExample)\">\n    $(3:Link with href)\n  </a>\n  <button class=\"btn btn-$(4:primary)\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#$(2:collapseExample)\" aria-expanded=\"false\" aria-controls=\"$(2:collapseExample)\">\n    $(5:Button with data-bs-target)\n  </button>\n</p>\n<div class=\"collapse\" id=\"$(2:collapseExample)\">\n  <div class=\"card card-body\">\n    $(6:Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.)\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Collapse multi target",
+            "trigger": "collapse-multi",
+            "body": "<p>\n  <a class=\"btn btn-$(1:primary)\" data-bs-toggle=\"collapse\" href=\"#$(2:multiCollapseExample1)\" role=\"button\" aria-expanded=\"false\" aria-controls=\"$(2:multiCollapseExample1)\">$(3:Toggle first element)</a>\n  <button class=\"btn btn-$(4:primary)\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#$(5:multiCollapseExample2)\" aria-expanded=\"false\" aria-controls=\"$(5:multiCollapseExample2)\">$(6:Toggle second element)</button>\n  <button class=\"btn btn-$(7:primary)\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\".multi-collapse\" aria-expanded=\"false\" aria-controls=\"$(2:multiCollapseExample1) $(5:multiCollapseExample2)\">$(8:Toggle both elements)</button>\n</p>\n<div class=\"row\">\n  <div class=\"col\">\n    <div class=\"collapse multi-collapse\" id=\"$(2:multiCollapseExample1)\">\n      <div class=\"card card-body\">\n        $(9:Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.)\n      </div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"collapse multi-collapse\" id=\"$(5:multiCollapseExample2)\">\n      <div class=\"card card-body\">\n        $(10:Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.)\n      </div>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Dropdown",
+            "trigger": "dropdown",
+            "body": "<div class=\"dropdown\">\n  <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n    $(1:Dropdown button)\n  </button>\n  <ul class=\"dropdown-menu\">\n    <li><a class=\"dropdown-item\" href=\"$(2:#)\">$(3:Action)</a></li>\n    <li><a class=\"dropdown-item\" href=\"$(4:#)\">$(5:Another action)</a></li>\n    <li><a class=\"dropdown-item\" href=\"$(6:#)\">$(7:Something else here)</a></li>\n  </ul>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Form",
+            "trigger": "form",
+            "body": "<form>\n  <div class=\"mb-3\">\n    <label for=\"$(1:exampleInputEmail1)\" class=\"form-label\">$(2:Email address)</label>\n    <input type=\"email\" class=\"form-control\" id=\"$(1:exampleInputEmail1)\" aria-describedby=\"$(3:emailHelp)\">\n    <div id=\"$(3:emailHelp)\" class=\"form-text\">$(4:We'll never share your email with anyone else.)</div>\n  </div>\n  <div class=\"mb-3\">\n    <label for=\"$(5:exampleInputPassword1)\" class=\"form-label\">$(6:Password)</label>\n    <input type=\"password\" class=\"form-control\" id=\"$(5:exampleInputPassword1)\">\n  </div>\n  <div class=\"mb-3 form-check\">\n    <input type=\"checkbox\" class=\"form-check-input\" id=\"$(7:exampleCheck1)\">\n    <label class=\"form-check-label\" for=\"$(7:exampleCheck1)\">$(8:Check me out)</label>\n  </div>\n  <button type=\"submit\" class=\"btn btn-$(9:primary)\">$(10:Submit)</button>\n</form>"
+        },
+        {
+            "name": "Bootstrap 5 Input Group",
+            "trigger": "input-group",
+            "body": "<div class=\"input-group mb-3\">\n  <span class=\"input-group-text\" id=\"$(1:basic-addon1)\">$(2:@)</span>\n  <input type=\"text\" class=\"form-control\" placeholder=\"$(3:Username)\" aria-label=\"$(3:Username)\" aria-describedby=\"$(1:basic-addon1)\">\n</div>\n\n<div class=\"input-group mb-3\">\n  <input type=\"text\" class=\"form-control\" placeholder=\"$(4:Recipient's username)\" aria-label=\"$(4:Recipient's username)\" aria-describedby=\"$(5:basic-addon2)\">\n  <span class=\"input-group-text\" id=\"$(5:basic-addon2)\">$(6:@example.com)</span>\n</div>\n\n<div class=\"mb-3\">\n  <label for=\"$(7:basic-url)\" class=\"form-label\">$(8:Your vanity URL)</label>\n  <div class=\"input-group\">\n    <span class=\"input-group-text\" id=\"$(9:basic-addon3)\">$(10:https://example.com/users/)</span>\n    <input type=\"text\" class=\"form-control\" id=\"$(7:basic-url)\" aria-describedby=\"$(9:basic-addon3)\">\n  </div>\n  <div class=\"form-text\" id=\"$(9:basic-addon3)\">$(11:Example help text goes outside the input group.)</div>\n</div>\n\n<div class=\"input-group mb-3\">\n  <span class=\"input-group-text\">$(12:$)</span>\n  <div class=\"form-floating\">\n    <input type=\"text\" class=\"form-control\" id=\"$(13:floatingInputGroup1)\" placeholder=\"$(14:Username)\">\n    <label for=\"$(13:floatingInputGroup1)\">$(14:Username)</label>\n  </div>\n</div>\n\n<div class=\"input-group\">\n  <div class=\"form-floating\">\n    <input type=\"text\" class=\"form-control\" id=\"$(15:floatingInputGroup2)\" placeholder=\"$(16:Password)\">\n    <label for=\"$(15:floatingInputGroup2)\">$(16:Password)</label>\n  </div>\n  <span class=\"input-group-text\">$(17:#)</span>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 List Group",
+            "trigger": "list-group",
+            "body": "<ul class=\"list-group\">\n  <li class=\"list-group-item\">$(1:An item)</li>\n  <li class=\"list-group-item\">$(2:A second item)</li>\n  <li class=\"list-group-item\">$(3:A third item)</li>\n  <li class=\"list-group-item\">$(4:A fourth item)</li>\n  <li class=\"list-group-item\">$(5:And a fifth one)</li>\n</ul>"
+        },
+        {
+            "name": "Bootstrap 5 Modal",
+            "trigger": "modal",
+            "body": "<div class=\"modal fade\" id=\"$(1:exampleModal)\" tabindex=\"-1\" aria-labelledby=\"$(2:exampleModalLabel)\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h1 class=\"modal-title fs-5\" id=\"$(2:exampleModalLabel)\">$(3:Modal title)</h1>\n        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"$(4:Close)\"></button>\n      </div>\n      <div class=\"modal-body\">\n        $(5:...)\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">$(6:Close)</button>\n        <button type=\"button\" class=\"btn btn-$(7:primary)\">$(8:Save changes)</button>\n      </div>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Navbar",
+            "trigger": "navbar",
+            "body": "<nav class=\"navbar navbar-expand-lg bg-body-tertiary\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"$(1:#)\">$(2:Navbar)</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#$(3:navbarSupportedContent)\" aria-controls=\"$(3:navbarSupportedContent)\" aria-expanded=\"false\" aria-label=\"$(4:Toggle navigation)\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"$(3:navbarSupportedContent)\">\n      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link active\" aria-current=\"page\" href=\"$(5:#)\">$(6:Home)</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"$(7:#)\">$(8:Link)</a>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"$(9:#)\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n            $(10:Dropdown)\n          </a>\n          <ul class=\"dropdown-menu\">\n            <li><a class=\"dropdown-item\" href=\"$(11:#)\">$(12:Action)</a></li>\n            <li><a class=\"dropdown-item\" href=\"$(13:#)\">$(14:Another action)</a></li>\n            <li><hr class=\"dropdown-divider\"></li>\n            <li><a class=\"dropdown-item\" href=\"$(15:#)\">$(16:Something else here)</a></li>\n          </ul>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link disabled\" aria-disabled=\"true\">$(17:Disabled)</a>\n        </li>\n      </ul>\n      <form class=\"d-flex\" role=\"search\">\n        <input class=\"form-control me-2\" type=\"search\" placeholder=\"$(18:Search)\" aria-label=\"$(18:Search)\">\n        <button class=\"btn btn-outline-success\" type=\"submit\">$(19:Search)</button>\n      </form>\n    </div>\n  </div>\n</nav>"
+        },
+        {
+            "name": "Bootstrap 5 Navbar Simple",
+            "trigger": "navbar-simple",
+            "body": "<nav class=\"navbar navbar-expand-lg bg-body-tertiary\">\n  <div class=\"container-fluid\">\n    <a class=\"navbar-brand\" href=\"$(1:#)\">$(2:Navbar)</a>\n  </div>\n</nav>"
+        },
+        {
+            "name": "Bootstrap 5 Offcanvas",
+            "trigger": "offcanvas",
+            "body": "<button class=\"btn btn-$(1:primary)\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#$(2:offcanvasExample)\" aria-controls=\"$(2:offcanvasExample)\">\n  $(3:Button with href data-bs-target)\n</button>\n\n<div class=\"offcanvas offcanvas-$(4:start)\" tabindex=\"-1\" id=\"$(2:offcanvasExample)\" aria-labelledby=\"$(5:offcanvasExampleLabel)\">\n  <div class=\"offcanvas-header\">\n    <h5 class=\"offcanvas-title\" id=\"$(5:offcanvasExampleLabel)\">$(6:Offcanvas)</h5>\n    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"$(7:Close)\"></button>\n  </div>\n  <div class=\"offcanvas-body\">\n    $(8:<div>\n      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.\n    </div>\n    <div class=\"dropdown mt-3\">\n      <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\">\n        Dropdown button\n      </button>\n      <ul class=\"dropdown-menu\">\n        <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n        <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n        <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n      </ul>\n    </div>)\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Pagination",
+            "trigger": "pagination",
+            "body": "<nav aria-label=\"$(1:Page navigation example)\">\n  <ul class=\"pagination\">\n    <li class=\"page-item\"><a class=\"page-link\" href=\"$(2:#)\">$(3:Previous)</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"$(4:#)\">$(5:1)</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"$(6:#)\">$(7:2)</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"$(8:#)\">$(9:3)</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"$(10:#)\">$(11:Next)</a></li>\n  </ul>\n</nav>"
+        },
+        {
+            "name": "Bootstrap 5 Placeholder Button",
+            "trigger": "placeholder-btn",
+            "body": "<a class=\"btn btn-$(1:primary) disabled placeholder col-$(2:6)\" aria-disabled=\"true\"></a>"
+        },
+        {
+            "name": "Bootstrap 5 Placeholder",
+            "trigger": "placeholder",
+            "body": "<div class=\"card\" aria-hidden=\"true\">\n  <img src=\"$(1:...)\" class=\"card-img-top\" alt=\"$(2:...)\">\n  <div class=\"card-body\">\n    <h5 class=\"card-title placeholder-glow\">\n      <span class=\"placeholder col-$(3:6)\"></span>\n    </h5>\n    <p class=\"card-text placeholder-glow\">\n      <span class=\"placeholder col-$(4:7)\"></span>\n      <span class=\"placeholder col-$(5:4)\"></span>\n      <span class=\"placeholder col-$(6:4)\"></span>\n      <span class=\"placeholder col-$(7:6)\"></span>\n      <span class=\"placeholder col-$(8:8)\"></span>\n    </p>\n    <a class=\"btn btn-$(9:primary) disabled placeholder col-$(10:6)\" aria-disabled=\"true\"></a>\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Popover",
+            "trigger": "popover",
+            "body": "<button type=\"button\" class=\"btn btn-$(1:primary)\" data-bs-toggle=\"popover\" data-bs-title=\"$(2:Popover title)\" data-bs-content=\"$(3:And here's some amazing content. It's very engaging. Right?)\">$(4:Click to toggle popover)</button>\n"
+        },
+        {
+            "name": "Bootstrap 5 Progress",
+            "trigger": "progress",
+            "body": "<div class=\"progress\" role=\"progressbar\" aria-label=\"$(1:Basic example)\" aria-valuenow=\"$(2:25)\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n  <div class=\"progress-bar\" style=\"width: $(2:25)%\"></div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Spinners Border",
+            "trigger": "spinner-border",
+            "body": "<div class=\"spinner-border\" role=\"status\">\n  <span class=\"visually-hidden\">$(1:Loading...)</span>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Spinners Growing",
+            "trigger": "spinner-grow",
+            "body": "<div class=\"spinner-grow\" role=\"status\">\n  <span class=\"visually-hidden\">$(1:Loading...)</span>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Spinners In Buttons",
+            "trigger": "spinner-btn",
+            "body": "<button class=\"btn btn-$(1:primary)\" type=\"button\" disabled>\n  <span class=\"spinner-border spinner-border-sm\" aria-hidden=\"true\"></span>\n  <span role=\"status\">$(2:Loading...)</span>\n</button>\n<button class=\"btn btn-$(3:primary)\" type=\"button\" disabled>\n  <span class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>\n  $(4:Loading...)\n</button>"
+        },
+        {
+            "name": "Bootstrap 5 Toast",
+            "trigger": "toast",
+            "body": "<div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">\n  <div class=\"toast-header\">\n    <img src=\"$(1:...)\" class=\"rounded me-2\" alt=\"$(2:...)\">\n    <strong class=\"me-auto\">$(3:Bootstrap)</strong>\n    <small>$(4:11 mins ago)</small>\n    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"$(5:Close)\"></button>\n  </div>\n  <div class=\"toast-body\">\n    $(6:Hello, world! This is a toast message.)\n  </div>\n</div>"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip",
+            "trigger": "tooltip",
+            "body": "<button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"$(1:top)\" data-bs-title=\"$(2:Tooltip on top)\">$(3:Tooltip on top)</button>"
+        },
+        {
+            "name": "Bootstrap 5 Table",
+            "trigger": "table",
+            "body": "<table class=\"table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">$(1:#)</th>\n      <th scope=\"col\">$(2:First)</th>\n      <th scope=\"col\">$(3:Last)</th>\n      <th scope=\"col\">$(4:Handle)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">$(5:1)</th>\n      <td>$(6:Mark)</td>\n      <td>$(7:Otto)</td>\n      <td>$(8:@mdo)</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">$(9:2)</th>\n      <td>$(10:Jacob)</td>\n      <td>$(11:Thornton)</td>\n      <td>$(12:@fat)</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">$(13:3)</th>\n      <td colspan=\"2\">$(14:Larry the Bird)</td>\n      <td>$(15:@twitter)</td>\n    </tr>\n  </tbody>\n</table>"
+        }
+    ],
+    "css": [
+        {
+            "name": "Bootstrap 5 Utility API Include",
+            "trigger": "bs5-utility-api-include",
+            "body": "@include ut$(1:ility)(\"$(2:display)\");"
+        },
+        {
+            "name": "Bootstrap 5 Utility API Generate",
+            "trigger": "bs5-utility-api-generate",
+            "body": "@include ut$(1:ilities)((\"$(2:display)\": ($(3:display: $(4:block flex inline}) !important)))\n"
+        }
+    ],
+    "javascript": [
+        {
+            "name": "Bootstrap 5 Modal Show",
+            "trigger": "modal-show",
+            "body": "const myModal = new bootstrap.Modal(document.getElementById('$(1:myModal)'), options);\nmyModal.show();"
+        },
+        {
+            "name": "Bootstrap 5 Modal Hide",
+            "trigger": "modal-hide",
+            "body": "const myModal = new bootstrap.Modal(document.getElementById('$(1:myModal)'), options);\nmyModal.hide();"
+        },
+        {
+            "name": "Bootstrap 5 Modal Toggle",
+            "trigger": "modal-toggle",
+            "body": "const myModal = new bootstrap.Modal(document.getElementById('$(1:myModal)'), options);\nmyModal.toggle();"
+        },
+        {
+            "name": "Bootstrap 5 Modal getInstance",
+            "trigger": "modal-getinstance",
+            "body": "const modalInstance = bootstrap.Modal.getInstance(document.getElementById('$(1:myModal)')); // Returns a Bootstrap modal instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Modal getOrCreateInstance",
+            "trigger": "modal-getorcreateinstance",
+            "body": "const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('$(1:myModal)')); // Returns a Bootstrap modal instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Carousel next",
+            "trigger": "carousel-next",
+            "body": "const carousel = new bootstrap.Carousel(document.getElementById('$(1:myCarousel)'));\ncarousel.next();\n"
+        },
+        {
+            "name": "Bootstrap 5 Carousel prev",
+            "trigger": "carousel-prev",
+            "body": "const carousel = new bootstrap.Carousel(document.getElementById('$(1:myCarousel)'));\ncarousel.prev();\n"
+        },
+        {
+            "name": "Bootstrap 5 Carousel cycle",
+            "trigger": "carousel-cycle",
+            "body": "const carousel = new bootstrap.Carousel(document.getElementById('$(1:myCarousel)'));\ncarousel.cycle();\n"
+        },
+        {
+            "name": "Bootstrap 5 Carousel pause",
+            "trigger": "carousel-pause",
+            "body": "const carousel = new bootstrap.Carousel(document.getElementById('$(1:myCarousel)'));\ncarousel.pause();\n"
+        },
+        {
+            "name": "Bootstrap 5 Carousel to",
+            "trigger": "carousel-to",
+            "body": "const carousel = new bootstrap.Carousel(document.getElementById('$(1:myCarousel)'));\ncarousel.to($(2:2)); // Index starting at 0\n"
+        },
+        {
+            "name": "Bootstrap 5 Collapse toggle",
+            "trigger": "collapse-toggle",
+            "body": "const collapseElementList = [].slice.call(document.querySelectorAll('$(1:.collapse)'))\nconst collapseList = collapseElementList.map(function (collapseEl) {\n  return new bootstrap.Collapse(collapseEl, { toggle: false })\n})\n"
+        },
+        {
+            "name": "Bootstrap 5 Dropdown toggle",
+            "trigger": "dropdown-toggle",
+            "body": "const dropdownElementList = [].slice.call(document.querySelectorAll('$(1:.dropdown-toggle)'))\nconst dropdownList = dropdownElementList.map(function (dropdownToggleEl) {\n  return new bootstrap.Dropdown(dropdownToggleEl)\n})\n"
+        },
+        {
+            "name": "Bootstrap 5 Offcanvas toggle",
+            "trigger": "offcanvas-toggle",
+            "body": "const offcanvasElementList = [].slice.call(document.querySelectorAll('$(1:.offcanvas)'))\nconst offcanvasList = offcanvasElementList.map(function (offcanvasEl) {\n  return new bootstrap.Offcanvas(offcanvasEl, { toggle: false })\n})\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover enable",
+            "trigger": "popover-enable",
+            "body": "const popover = new bootstrap.Popover(document.getElementById('$(1:example'), {\n  container: 'body'\n})\npopover.enable()\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover disable",
+            "trigger": "popover-disable",
+            "body": "const popover = new bootstrap.Popover(document.getElementById('$(1:example'), {\n  container: 'body'\n})\npopover.disable()\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover toggleEnabled",
+            "trigger": "popover-toggleenabled",
+            "body": "const popover = new bootstrap.Popover(document.getElementById('$(1:example'), {\n  container: 'body'\n})\npopover.toggleEnabled()\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover toggle",
+            "trigger": "popover-toggle",
+            "body": "const popover = new bootstrap.Popover(document.getElementById('$(1:example'), {\n  container: 'body'\n})\npopover.toggle()\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover show",
+            "trigger": "popover-show",
+            "body": "const popover = new bootstrap.Popover(document.getElementById('$(1:example'), {\n  container: 'body'\n})\npopover.show()\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover hide",
+            "trigger": "popover-hide",
+            "body": "const popover = new bootstrap.Popover(document.getElementById('$(1:example'), {\n  container: 'body'\n})\npopover.hide()\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover dispose",
+            "trigger": "popover-dispose",
+            "body": "const popover = new bootstrap.Popover(document.getElementById('$(1:example'), {\n  container: 'body'\n})\npopover.dispose()\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover getInstance",
+            "trigger": "popover-getinstance",
+            "body": "const popover = bootstrap.Popover.getInstance(document.getElementById('$(1:example)')) // Returns a Bootstrap popover instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Popover getOrCreateInstance",
+            "trigger": "popover-getorcreateinstance",
+            "body": "const popover = bootstrap.Popover.getOrCreateInstance(document.getElementById('$(1:example)')) // Returns a Bootstrap popover instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Scrollspy refresh",
+            "trigger": "scrollspy-refresh",
+            "body": "const dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy=\"scroll\"]'))\ndataSpyList.forEach(function (dataSpyEl) {\n  bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()\n})\n"
+        },
+        {
+            "name": "Bootstrap 5 Tab show",
+            "trigger": "tab-show",
+            "body": "const tab = new bootstrap.Tab(document.getElementById('$(1:myTab)'))\ntab.show()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tab dispose",
+            "trigger": "tab-dispose",
+            "body": "const tab = new bootstrap.Tab(document.getElementById('$(1:myTab)'))\ntab.dispose()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tab getInstance",
+            "trigger": "tab-getinstance",
+            "body": "const tab = bootstrap.Tab.getInstance(document.getElementById('$(1:myTab)')) // Returns a Bootstrap tab instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Tab getOrCreateInstance",
+            "trigger": "tab-getorcreateinstance",
+            "body": "const tab = bootstrap.Tab.getOrCreateInstance(document.getElementById('$(1:myTab)')) // Returns a Bootstrap tab instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Toast show",
+            "trigger": "toast-show",
+            "body": "const toast = new bootstrap.Toast(document.getElementById('$(1:myToastElement)'))\ntoast.show()\n"
+        },
+        {
+            "name": "Bootstrap 5 Toast hide",
+            "trigger": "toast-hide",
+            "body": "const toast = new bootstrap.Toast(document.getElementById('$(1:myToastElement)'))\ntoast.hide()\n"
+        },
+        {
+            "name": "Bootstrap 5 Toast dispose",
+            "trigger": "toast-dispose",
+            "body": "const toast = new bootstrap.Toast(document.getElementById('$(1:myToastElement)'))\ntoast.dispose()\n"
+        },
+        {
+            "name": "Bootstrap 5 Toast getInstance",
+            "trigger": "toast-getinstance",
+            "body": "const toast = bootstrap.Toast.getInstance(document.getElementById('$(1:myToastElement)')) // Returns a Bootstrap toast instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Toast getOrCreateInstance",
+            "trigger": "toast-getorcreateinstance",
+            "body": "const toast = bootstrap.Toast.getOrCreateInstance(document.getElementById('$(1:myToastElement)')) // Returns a Bootstrap toast instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip enable",
+            "trigger": "tooltip-enable",
+            "body": "const tooltip = new bootstrap.Tooltip(document.getElementById('$(1:example'))\ntooltip.enable()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip disable",
+            "trigger": "tooltip-disable",
+            "body": "const tooltip = new bootstrap.Tooltip(document.getElementById('$(1:example'))\ntooltip.disable()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip toggleEnabled",
+            "trigger": "tooltip-toggleenabled",
+            "body": "const tooltip = new bootstrap.Tooltip(document.getElementById('$(1:example'))\ntooltip.toggleEnabled()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip toggle",
+            "trigger": "tooltip-toggle",
+            "body": "const tooltip = new bootstrap.Tooltip(document.getElementById('$(1:example'))\ntooltip.toggle()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip show",
+            "trigger": "tooltip-show",
+            "body": "const tooltip = new bootstrap.Tooltip(document.getElementById('$(1:example'))\ntooltip.show()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip hide",
+            "trigger": "tooltip-hide",
+            "body": "const tooltip = new bootstrap.Tooltip(document.getElementById('$(1:example'))\ntooltip.hide()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip dispose",
+            "trigger": "tooltip-dispose",
+            "body": "const tooltip = new bootstrap.Tooltip(document.getElementById('$(1:example'))\ntooltip.dispose()\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip getInstance",
+            "trigger": "tooltip-getinstance",
+            "body": "const tooltip = bootstrap.Tooltip.getInstance(document.getElementById('$(1:example)')) // Returns a Bootstrap tooltip instance\n"
+        },
+        {
+            "name": "Bootstrap 5 Tooltip getOrCreateInstance",
+            "trigger": "tooltip-getorcreateinstance",
+            "body": "const tooltip = bootstrap.Tooltip.getOrCreateInstance(document.getElementById('$(1:example)')) // Returns a Bootstrap tooltip instance\n"
+        }
+    ]
+}
