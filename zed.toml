@@ -3,3 +3,5 @@ description = "Provides autocomplete for Bootstrap 5 utility classes."
 version = "1"
 repository = "https://github.com/mfabing/zed_bootstrap5_snippets/"
 author = "Michael Fabing"
+license = "MIT"
+categories = ["autocomplete", "html", "css", "bootstrap"]
